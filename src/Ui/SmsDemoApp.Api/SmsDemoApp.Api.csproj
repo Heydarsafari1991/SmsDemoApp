@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\SmsDemoApp.Infrastructure.CrossCutting\SmsDemoApp.Infrastructure.CrossCutting.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\SmsDemoApp.Infrastructure.Identity\SmsDemoApp.Infrastructure.Identity.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\SmsDemoApp.Infrastructure.Persistence\SmsDemoApp.Infrastructure.Persistence.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\SmsDemoApp.Infrastructure.CrossCutting\SmsDemoApp.Infrastructure.CrossCutting.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\SmsDemoApp.Infrastructure.Identity\SmsDemoApp.Infrastructure.Identity.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\SmsDemoApp.Infrastructure.Persistence\SmsDemoApp.Infrastructure.Persistence.csproj" />
+      <ProjectReference Include="..\SmsDemoApp.WebFramework\SmsDemoApp.WebFramework.csproj" />
+      <ProjectReference Include="..\SmsDemoApp.WebFramework\SmsDemoApp.WebFramework.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>
