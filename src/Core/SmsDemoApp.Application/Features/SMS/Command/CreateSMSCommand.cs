@@ -9,7 +9,6 @@ namespace SmsDemoApp.Application.Features.SMS.Command;
 
 
 public record CreateSMSCommand(
-    long Id ,
     int CustomerId,
     string Text,
     string ReciverPhoneNumber,

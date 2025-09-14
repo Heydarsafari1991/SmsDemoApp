@@ -23,27 +23,7 @@ public static class PersistenceServiceCollectionExtensions
         });
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-        services.AddMassTransit(x =>
-        {
-            x.AddEntityFrameworkOutbox<SmsDemoAppDbContext>(o =>
-            {
-                o.UseSqlServer();
-                o.QueryDelay = TimeSpan.FromSeconds(100);
-                o.DuplicateDetectionWindow = TimeSpan.FromMinutes(5);
-                o.UseBusOutbox();
-            });
-
-            x.UsingRabbitMq((context, cfg) =>
-            {
-                cfg.Host(configuration["RabbitMq:Host"], h =>
-                {
-                    h.Username(configuration["RabbitMq:Username"]);
-                    h.Password(configuration["RabbitMq:Password"]);
-                });
-
-                cfg.ConfigureEndpoints(context);
-            });
-        });
+        
 
         return services;
     }

@@ -12,7 +12,7 @@ namespace SmsDemoApp.Application.Features.SMS.Command;
 
 
 public record ProcessPreSMSCommand(
-    long Id ,
+    Guid Id ,
     int CustomerId,
     string Text,
     string ReciverPhoneNumber) : IRequest<OperationResult<bool>>, IValidatableModel<ProcessPreSMSCommand>

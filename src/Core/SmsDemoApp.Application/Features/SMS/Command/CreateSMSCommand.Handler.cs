@@ -35,7 +35,9 @@ public class CreateSMSCommandHandler(IUnitOfWork unitOfWork, IEventPublisher eve
                 CustomerId = request.CustomerId,
                 ReciverPhoneNumber = request.ReciverPhoneNumber,
                 Status = MessageDelivaryStatus.Success,
-                Text = request.Text
+                Text = request.Text,
+                Id = Guid.NewGuid()
+
             };
             
             await unitOfWork.SMSRepository.CreateAsync(sms, cancellationToken);

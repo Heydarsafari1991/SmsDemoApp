@@ -19,9 +19,9 @@ internal class SMSRepository(SmsDemoAppDbContext db) : BaseRepository<SMSEntity>
     }
 
 
-    public async Task<SMSEntity> GetByIdAysnc(long id, CancellationToken cancellationToken = default)
+    public async Task<SMSEntity> GetByIdAysnc(Guid id, CancellationToken cancellationToken = default)
     {
-        return await base.TableNoTracking
+        return await base.Table
             .FirstOrDefaultAsync(c => c.Id==id, cancellationToken: cancellationToken);
     }
 

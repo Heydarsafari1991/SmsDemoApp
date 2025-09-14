@@ -12,7 +12,7 @@ public record SmsCreatedIntegrationEvent(
     string Text,
     string ReciverPhoneNumber,
     MessageDelivaryStatus Status,
-    long Id,
+    Guid Id,
     Guid EventId
 );
 

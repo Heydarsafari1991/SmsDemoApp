@@ -11,7 +11,7 @@ public abstract class BaseEntity<TKey>:IEntity
     public DateTime CreatedDate { get; set; }
     public DateTime? ModifiedDate { get; set; }
     
-    public TKey Id { get; protected set; }
+    public TKey Id { get;  set; }
     
     
     public override bool Equals(object? entity)

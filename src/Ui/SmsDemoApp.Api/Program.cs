@@ -10,6 +10,8 @@ using SmsDemoApp.WebFramework.Models;
 using SmsDemoApp.WebFramework.Swagger;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
+using MassTransit;
+using SmsDemoApp.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,7 +53,27 @@ builder.Services.AddControllers(options =>
     options.SuppressModelStateInvalidFilter = true;
     options.SuppressMapClientErrors = true;
 });
+builder.Services.AddMassTransit(x =>
+{
+    x.AddEntityFrameworkOutbox<SmsDemoAppDbContext>(o =>
+    {
+        o.UseSqlServer();
+        o.QueryDelay = TimeSpan.FromSeconds(1);
+        o.DuplicateDetectionWindow = TimeSpan.FromMinutes(5);
+        o.UseBusOutbox();
+    });
 
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMq:Host"], h =>
+        {
+            h.Username(builder.Configuration["RabbitMq:Username"]);
+            h.Password(builder.Configuration["RabbitMq:Password"]);
+        });
+
+        cfg.ConfigureEndpoints(context);
+    });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 

@@ -25,7 +25,8 @@ public class CreatePreSMSCommandHandler(IUnitOfWork unitOfWork, IEventPublisher 
             CustomerId = request.CustomerId,
             ReciverPhoneNumber = request.ReciverPhoneNumber,
             Status = MessageDelivaryStatus.Pending,
-            Text = request.Text
+            Text = request.Text,
+            Id = Guid.NewGuid()
         };
 
         await unitOfWork.SMSRepository.CreateAsync(sms, cancellationToken);

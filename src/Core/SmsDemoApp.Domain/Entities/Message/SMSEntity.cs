@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmsDemoApp.Domain.Entities.Message;
 
-public class SMSEntity : BaseEntity<long>
+public class SMSEntity : BaseEntity<Guid>
 {
     public int CustomerId { get; set; } 
     public string Text { get; set; } = string.Empty;
@@ -17,8 +17,8 @@ public class SMSEntity : BaseEntity<long>
 }
 public enum MessageDelivaryStatus
 {
-    Pending,
-    Success,
-    Fail,
-    NoMoney
+    Pending=1,
+    Success=2,
+    Fail=3,
+    NoMoney=4
 }
