@@ -8,6 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.5.2" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.2" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Infrastructure\SmsDemoApp.Infrastructure.CrossCutting\SmsDemoApp.Infrastructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\src\Infrastructure\SmsDemoApp.Infrastructure.Identity\SmsDemoApp.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\src\Infrastructure\SmsDemoApp.Infrastructure.Persistence\SmsDemoApp.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\src\Ui\SmsDemoApp.WebFramework\SmsDemoApp.WebFramework.csproj" />
   </ItemGroup>
 </Project>

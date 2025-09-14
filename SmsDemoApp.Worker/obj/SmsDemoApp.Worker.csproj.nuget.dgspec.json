@@ -32,6 +32,189 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.CrossCutting\\SmsDemoApp.Infrastructure.CrossCutting.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.CrossCutting\\SmsDemoApp.Infrastructure.CrossCutting.csproj"
+              },
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Identity\\SmsDemoApp.Infrastructure.Identity.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Identity\\SmsDemoApp.Infrastructure.Identity.csproj"
+              },
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj"
+              },
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Ui\\SmsDemoApp.WebFramework\\SmsDemoApp.WebFramework.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Ui\\SmsDemoApp.WebFramework\\SmsDemoApp.WebFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj",
+        "projectName": "SmsDemoApp.Application",
+        "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj",
+        "packagesPath": "C:\\Users\\Heydar\\.nuget\\packages\\",
+        "outputPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heydar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Domain\\SmsDemoApp.Domain.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Domain\\SmsDemoApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "Mediator.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
+            "Mediator.SourceGenerator": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Domain\\SmsDemoApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Domain\\SmsDemoApp.Domain.csproj",
+        "projectName": "SmsDemoApp.Domain",
+        "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Domain\\SmsDemoApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\Heydar\\.nuget\\packages\\",
+        "outputPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heydar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -51,9 +234,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.Extensions.Hosting": {
+            "Ardalis.GuardClauses": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -68,6 +255,417 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.CrossCutting\\SmsDemoApp.Infrastructure.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.CrossCutting\\SmsDemoApp.Infrastructure.CrossCutting.csproj",
+        "projectName": "SmsDemoApp.Infrastructure.CrossCutting",
+        "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.CrossCutting\\SmsDemoApp.Infrastructure.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\Heydar\\.nuget\\packages\\",
+        "outputPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heydar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "File.TypeChecker": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Minio": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Enrichers.Span": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Identity\\SmsDemoApp.Infrastructure.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Identity\\SmsDemoApp.Infrastructure.Identity.csproj",
+        "projectName": "SmsDemoApp.Infrastructure.Identity",
+        "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Identity\\SmsDemoApp.Infrastructure.Identity.csproj",
+        "packagesPath": "C:\\Users\\Heydar\\.nuget\\packages\\",
+        "outputPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heydar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj",
+        "projectName": "SmsDemoApp.Infrastructure.Persistence",
+        "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Heydar\\.nuget\\packages\\",
+        "outputPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heydar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "MassTransit.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Ui\\SmsDemoApp.WebFramework\\SmsDemoApp.WebFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Ui\\SmsDemoApp.WebFramework\\SmsDemoApp.WebFramework.csproj",
+        "projectName": "SmsDemoApp.WebFramework",
+        "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Ui\\SmsDemoApp.WebFramework\\SmsDemoApp.WebFramework.csproj",
+        "packagesPath": "C:\\Users\\Heydar\\.nuget\\packages\\",
+        "outputPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Ui\\SmsDemoApp.WebFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heydar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Core\\SmsDemoApp.Application\\SmsDemoApp.Application.csproj"
+              },
+              "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj": {
+                "projectPath": "C:\\Web\\TestArevan\\SmsDemoApp\\src\\Infrastructure\\SmsDemoApp.Infrastructure.Persistence\\SmsDemoApp.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[14.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

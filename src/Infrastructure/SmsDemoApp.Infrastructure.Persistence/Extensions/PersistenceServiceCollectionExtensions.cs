@@ -28,8 +28,9 @@ public static class PersistenceServiceCollectionExtensions
             x.AddEntityFrameworkOutbox<SmsDemoAppDbContext>(o =>
             {
                 o.UseSqlServer();
-                o.QueryDelay = TimeSpan.FromSeconds(1);
+                o.QueryDelay = TimeSpan.FromSeconds(100);
                 o.DuplicateDetectionWindow = TimeSpan.FromMinutes(5);
+                o.UseBusOutbox();
             });
 
             x.UsingRabbitMq((context, cfg) =>
