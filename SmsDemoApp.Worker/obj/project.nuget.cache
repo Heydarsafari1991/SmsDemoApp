@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5nJbkIdQO30=",
+  "dgSpecHash": "D+MEfuuHetg=",
   "success": true,
   "projectFilePath": "C:\\Web\\TestArevan\\SmsDemoApp\\SmsDemoApp.Worker\\SmsDemoApp.Worker.csproj",
   "expectedPackageFiles": [
@@ -76,6 +76,7 @@
     "C:\\Users\\Heydar\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\Heydar\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
     "C:\\Users\\Heydar\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Heydar\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
     "C:\\Users\\Heydar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Heydar\\.nuget\\packages\\minio\\6.0.3\\minio.6.0.3.nupkg.sha512",
     "C:\\Users\\Heydar\\.nuget\\packages\\namotion.reflection\\3.2.0\\namotion.reflection.3.2.0.nupkg.sha512",

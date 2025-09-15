@@ -1,28 +1,28 @@
 ﻿services:
-  adly.api:
-    image: adly.api
+  SmsDemoApp.api:
+    image: SmsDemoApp.api
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: adly-api
+    container_name: SmsDemoApp-api
     environment:
       "ASPNETCORE_URLS": "http://+"
       "ASPNETCORE_ENVIRONMENT": "Development"
     ports:
       - "5000:80"
-  adly-sql: 
+  SmsDemoApp-sql: 
     image: "mcr.microsoft.com/mssql/server:2022-latest"
-    container_name: adly_sql
+    container_name: SmsDemoApp_sql
     ports: # not actually needed, because the two services are on the same network
       - "123:1433"
     environment:
       - ACCEPT_EULA=y
-      - SA_PASSWORD=AdlyDbPass@123
+      - SA_PASSWORD=SmsDemoAppDbPass@123
     volumes:
       - sql-data:/data
-  minio-adly:
+  minio-SmsDemoApp:
     image: "minio/minio"
-    container_name: minio_adly
+    container_name: minio_SmsDemoApp
     ports:
       - "9000:9000"
       - "9001:9001"
@@ -33,9 +33,9 @@
       - minio-data:/data
     command: server /data --console-address ":9001"
   
-  adly-seq:
+  SmsDemoApp-seq:
     image: datalust/seq:latest
-    container_name: adly_seq
+    container_name: SmsDemoApp_seq
     restart: always
     ports:
       - "5341:80"
