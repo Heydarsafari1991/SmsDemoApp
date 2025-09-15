@@ -1,13 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SmsDemoApp.Application.Repositories.SmS;
-using SmsDemoApp.Domain.Entities.Ad;
 using SmsDemoApp.Domain.Entities.Message;
 using SmsDemoApp.Infrastructure.Persistence.Repositories.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SmsDemoApp.Infrastructure.Persistence.Repositories;
 
@@ -22,12 +16,12 @@ internal class SMSRepository(SmsDemoAppDbContext db) : BaseRepository<SMSEntity>
     public async Task<SMSEntity> GetByIdAysnc(Guid id, CancellationToken cancellationToken = default)
     {
         return await base.Table
-            .FirstOrDefaultAsync(c => c.Id==id, cancellationToken: cancellationToken);
+            .FirstOrDefaultAsync(c => c.Id == id, cancellationToken: cancellationToken);
     }
 
     public async Task<(IEnumerable<SMSEntity>, int totalCount)> Search(int customerId, MessageDelivaryStatus? status = null, string? text = null, string? reciverPhoneNumber = null, int page = 1, int pageSize = 10, CancellationToken cancellationToken = default)
     {
-        var query =  base.TableNoTracking
+        var query = base.TableNoTracking
             .Where(c => c.CustomerId.Equals(customerId)
             && (status == null || c.Status == status)
             && (text == null || c.Text == text)

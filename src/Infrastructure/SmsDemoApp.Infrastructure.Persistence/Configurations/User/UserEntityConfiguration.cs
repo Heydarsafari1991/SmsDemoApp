@@ -39,9 +39,7 @@ internal class UserEntityConfiguration:IEntityTypeConfiguration<UserEntity>
             .WithOne(c => c.User)
             .HasForeignKey(c => c.UserId);
 
-        builder.HasMany(c => c.Ads)
-            .WithOne(c => c.User)
-            .HasForeignKey(c => c.UserId);
+     
 
         builder.HasIndex(c => c.NormalizedEmail);
         builder.HasIndex(c => c.NormalizedUserName);

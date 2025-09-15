@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmsDemoApp.Infrastructure.Persistence;
 
@@ -11,9 +12,11 @@ using SmsDemoApp.Infrastructure.Persistence;
 namespace SmsDemoApp.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(SmsDemoAppDbContext))]
-    partial class SmsDemoAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250915010252_fixedDatabase")]
+    partial class fixedDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

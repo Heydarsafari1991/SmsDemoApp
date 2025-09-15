@@ -1,28 +1,23 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
-using SmsDemoApp.Application.Repositories.Ad;
-using SmsDemoApp.Application.Repositories.Category;
 using SmsDemoApp.Application.Repositories.Common;
 using SmsDemoApp.Application.Repositories.CustomerBalance;
-using SmsDemoApp.Application.Repositories.Location;
 using SmsDemoApp.Application.Repositories.SmS;
 
 namespace SmsDemoApp.Infrastructure.Persistence.Repositories.Common;
 
-public class UnitOfWork:IUnitOfWork
+public class UnitOfWork : IUnitOfWork
 {
     private readonly SmsDemoAppDbContext _db;
-    
-    
+
+
     public UnitOfWork(SmsDemoAppDbContext db)
     {
         _db = db;
-        LocationRepository = new LocationRepository(db);
-        CategoryRepository = new CategoryRepository(db);
-        AdRepository = new AdRepository(db);
+
         SMSRepository = new SMSRepository(db);
         CustomerBalanceRepository = new CustomerBalanceRepository(db);
     }
-    
+
     public void Dispose()
     {
         _db.Dispose();
@@ -33,9 +28,7 @@ public class UnitOfWork:IUnitOfWork
         await _db.DisposeAsync();
     }
 
-    public ILocationRepository LocationRepository { get; }
-    public ICategoryRepository CategoryRepository { get; }
-    public IAdRepository AdRepository { get; }
+
 
     public ISMSRepository SMSRepository { get; }
     public ICustomerBalanceRepository CustomerBalanceRepository { get; }
@@ -47,7 +40,7 @@ public class UnitOfWork:IUnitOfWork
 
     public async Task<IDbContextTransaction> BeginTransactionAsync(CancellationToken cancellationToken = default)
     {
-       
+
         if (_db.Database.CurrentTransaction != null)
             return _db.Database.CurrentTransaction;
 

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmsDemoApp.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+955328dedeef982813bcd088b3e751bc7d4eeccd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a62e505cf30c6cb6a808bb4503b62c48d310b263")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmsDemoApp.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmsDemoApp.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
